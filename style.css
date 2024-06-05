@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #723f3f, #fffe7b);
+
+  }
+
+  .headline {
+    height: 100px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255 255 255/ 11%);
+    box-shadow: 0px 10px 16px #31313152;
+    border-radius: 50px;
+
+    backdrop-filter: blur(40px);
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .card {
+    color: #fff;
+    width: 40rem !important;
+    height: 20rem;
+    background: rgb(255 255 255 / 11%);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 10px 16px #31313152;
+    position: relative;
+    z-index: 5;
+  }
+
+  .hero::before {
+    content: '';
+    width: 180px;
+    height: 180px;
+    background-color: #f41b7b;
+    border-radius: 5px;
+    position: absolute;
+    left: 300px;
+    top: 250px;
+    z-index: -1;
+
+  }
+
+  .hero::after {
+    content: '';
+    width: 180px;
+    height: 180px;
+    background-color: #419aff;
+    border-radius: 50%;
+    position: absolute;
+    right: 300px;
+    bottom: 130px;
+    z-index: -1;
+  }
+
+  .time {
+    gap: 5px;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 45px;
+
+
+  }
+
+  .display {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .card-text {
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .card hr {
+    margin: 0;
+    padding: 0;
+  }
+
+  #other-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-size: xx-large;
+
+  }
+
+  .othertime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #AmPm {
+    height: 100%;
+    width: 50px;
+    margin: 10px;
+    font-size: xx-large;
+    position: relative;
+    bottom: -15px;
+  }
+
+  .select {
+    word-wrap: normal;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    outline: none;
+  }
+
+
+  .btn-btn {
+    background: #419aff;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    font-weight: 600;
+    font-variant: all-small-caps;
+    border: none;
+    border-radius: 5px;
+  }
